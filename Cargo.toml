@@ -7,11 +7,8 @@ description = "Line-wise memory buffer for pipes"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies.async-std]
-version = "1"
-default-features = true
-
 [dependencies]
 clap = { version = "3", features = ["derive"] }
-smashquote = { version = "*", path = "../smashquote" }
+smashquote = { version = "0", path = "../smashquote" }
 anyhow = { version = "1" }
+crossbeam = { version = "0" }
