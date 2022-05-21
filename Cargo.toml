@@ -1,0 +1,17 @@
+[package]
+name = "lbuffer"
+version = "0.1.0"
+edition = "2021"
+author = "Ionized Girl"
+description = "Line-wise memory buffer for pipes"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.async-std]
+version = "1"
+default-features = true
+
+[dependencies]
+clap = { version = "3", features = ["derive"] }
+smashquote = { version = "*", path = "../smashquote" }
+anyhow = { version = "1" }
